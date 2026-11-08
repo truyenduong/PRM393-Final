@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
     "dev": "npx ts-node-dev --respawn --transpile-only src/index.ts",
     "postinstall": "npx prisma generate",
     "setup": "npm install && npx prisma generate && npx ts-node prisma/seed.ts",
